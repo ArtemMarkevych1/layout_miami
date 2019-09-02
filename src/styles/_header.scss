@@ -22,14 +22,22 @@
   &__phone {
     text-decoration: none;
     color: #fff;
-    @include hover(opacity, 0.6);
+    transition: opacity 0.3s;
+  }
+  &__phone:hover {
+    cursor: pointer;
+    opacity: 0.6;
   }
   &__call {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    border-bottom: 1px dashed rgba(255, 255,255, 0.6);
-    @include hover(opacity, 0.6);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+    transition: opacity 0.3s;
+  }
+  &__call:hover {
+    cursor: pointer;
+    opacity: 0.6;
   }
 }
 
@@ -50,7 +58,11 @@
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    @include hover(opacity, 0.6);
+    transition: opacity 0.3s;
+  }
+  &__li:hover {
+    cursor: pointer;
+    opacity: 0.6;
   }
 }
 
